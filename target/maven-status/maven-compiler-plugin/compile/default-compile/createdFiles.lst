@@ -1,0 +1,10 @@
+com/teste/adansdev/AdansDevApplication.class
+com/teste/adansdev/service/MatchesService.class
+com/teste/adansdev/entity/Wrangle.class
+com/teste/adansdev/controller/MatchController.class
+com/teste/adansdev/entity/Player.class
+com/teste/adansdev/repository/LoadJson$1.class
+com/teste/adansdev/entity/Match.class
+com/teste/adansdev/repository/LoadJson.class
+com/teste/adansdev/repository/EntityEnun.class
+com/teste/adansdev/service/MatchesServiceImpl.class
