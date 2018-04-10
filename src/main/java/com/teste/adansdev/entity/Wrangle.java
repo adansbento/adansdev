@@ -2,18 +2,18 @@ package com.teste.adansdev.entity;
 
 public class Wrangle {
 
-    private int matchId;
+    private int match;
     private Long killTime;
     private Player killer;
     private Player killed;
     private Player weapon;
 
-    public int getMatchId() {
-	return matchId;
+    public int getMatch() {
+        return match;
     }
 
-    public void setMatchId(int matchId) {
-	this.matchId = matchId;
+    public void setMatch(int match) {
+        this.match = match;
     }
 
     public Long getKillTime() {

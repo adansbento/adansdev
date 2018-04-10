@@ -1,8 +1,9 @@
 package com.teste.adansdev.controller;
 
 
-import com.teste.adansdev.entity.Match;
-import com.teste.adansdev.service.MatchServiceImpl;
+import com.teste.adansdev.entity.Wrangle;
+import com.teste.adansdev.service.WrangleService;
+import com.teste.adansdev.service.WrangleServiceImpl;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,14 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/match")
-public class MatchController   {
+@RequestMapping(value = "/wrangle")
+public class WrangleController {
 
-   private final MatchServiceImpl matchesService = new MatchServiceImpl();
-
+   private final WrangleService wrangleService = new WrangleServiceImpl();
 
    @RequestMapping(value = "/all", produces ="application/json", method = RequestMethod.GET)
-   public List<Match> matches() {
-      return matchesService.findAll();
+   public List<Wrangle> matches() {
+      return wrangleService.findAll();
    }
 }
