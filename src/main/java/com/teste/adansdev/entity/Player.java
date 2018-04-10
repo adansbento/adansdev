@@ -1,6 +1,10 @@
 package com.teste.adansdev.entity;
 
-public class Player {
+import java.io.Serializable;
+
+public class Player implements Serializable{
+
+    public Player(){}
 
     private String name;
 

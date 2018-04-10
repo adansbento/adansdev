@@ -1,12 +1,18 @@
 package com.teste.adansdev.entity;
 
-public class Wrangle {
+import java.io.Serializable;
+
+public class Wrangle implements Serializable {
 
     private int match;
-    private Long killTime;
+    private String killtime;
     private Player killer;
     private Player killed;
-    private Player weapon;
+    private String weapon;
+
+    public Wrangle(){
+
+    }
 
     public int getMatch() {
         return match;
@@ -16,35 +22,35 @@ public class Wrangle {
         this.match = match;
     }
 
-    public Long getKillTime() {
-	return killTime;
+    public String getKilltime() {
+        return killtime;
     }
 
-    public void setKillTime(Long killTime) {
-	this.killTime = killTime;
+    public void setKilltime(String killtime) {
+        this.killtime = killtime;
     }
 
     public Player getKiller() {
-	return killer;
+        return killer;
     }
 
     public void setKiller(Player killer) {
-	this.killer = killer;
+        this.killer = killer;
     }
 
     public Player getKilled() {
-	return killed;
+        return killed;
     }
 
     public void setKilled(Player killed) {
-	this.killed = killed;
+        this.killed = killed;
     }
 
-    public Player getWeapon() {
-	return weapon;
+    public String getWeapon() {
+        return weapon;
     }
 
-    public void setWeapon(Player weapon) {
-	this.weapon = weapon;
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
     }
 }

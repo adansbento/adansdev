@@ -10,4 +10,5 @@ public class MatchRepository {
    public List<Match> findAll() {
       return LoadJson.getInstance().load(EntityEnun.MATCH);
    }
+
 }

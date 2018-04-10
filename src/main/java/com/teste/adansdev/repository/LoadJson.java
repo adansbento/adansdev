@@ -29,6 +29,7 @@ class LoadJson{
     public List load(EntityEnun entityEnun) {
 
         try {
+
             ObjectMapper mapper = new ObjectMapper();
             JavaType type = mapper.getTypeFactory().constructCollectionType(List.class, entityEnun.getTypeClass());
             InputStream inputStream = TypeReference.class.getResourceAsStream(entityEnun.getPathFile());

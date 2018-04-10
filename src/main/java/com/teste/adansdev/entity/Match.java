@@ -1,9 +1,10 @@
 package com.teste.adansdev.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class Match {
+public class Match implements Serializable{
 
     private int match;
     private Date begin;
